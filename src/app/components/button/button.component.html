@@ -1,0 +1,6 @@
+<button class="button" [class]="color" (click)="onButtonClicked()">
+    <span *ngIf="icon" class="icon">
+      <i class="fas" [class]="icon"></i>
+    </span>
+    <span>{{title}}</span>
+  </button>

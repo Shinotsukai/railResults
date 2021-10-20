@@ -1,12 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ButtonModule } from '../components/button/button.module';
+import { RailTicketComponent } from './rail-ticket.component';
+import { LevelModule } from '../components/level/level.module';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [RailTicketComponent],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    ButtonModule,
+    LevelModule
+  ],
+  exports:[RailTicketComponent]
 })
 export class RailTicketModule { }

@@ -1,0 +1,32 @@
+<div class="level mb-4">
+    <div class="level-left">
+      <div class="level-item has-text-left">
+        <article>
+          <strong [class]="fontColor">
+              <ng-content select="[slot=leftTitle]"></ng-content>
+              </strong
+          ><br />
+          <div class="subtitle" [class]="fontColor">
+            <ng-content select="[slot=leftSubTitle]"></ng-content>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div *ngIf="showArrow" class="level-item has-text-white">
+      <i class="fas fa-arrow-right"></i>
+    </div>
+
+    <div class="level-right">
+      <div class="level-item has-text-right">
+        <article>
+          <strong [class]="fontColor">
+              <ng-content select="[slot=rightTitle]"></ng-content></strong
+          ><br />
+          <div class="subtitle" [class]="fontColor">
+            <ng-content select="[slot=rightSubTitle]"></ng-content>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
